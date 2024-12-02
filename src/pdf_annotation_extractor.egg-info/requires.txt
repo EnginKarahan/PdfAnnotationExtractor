@@ -1,0 +1,6 @@
+PyMuPDF==1.23.8
+babel~=2.16.0
+setuptools~=75.6.0
+
+[:sys_platform == "win32"]
+gettext-windows>=0.21

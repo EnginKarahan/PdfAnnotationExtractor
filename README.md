@@ -17,7 +17,7 @@ This program allows you to extract annotations from PDF files and save them in a
 - Progress tracking
 - Automatic page numbering detection
 - Batch processing support
-- Export to structured text format
+- Export to markdown text format
 
 ## Installation
 

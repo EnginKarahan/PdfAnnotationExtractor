@@ -1,0 +1,243 @@
+# Turkish translations for PROJECT.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the PROJECT project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-02 21:57+0100\n"
+"PO-Revision-Date: 2024-12-02 21:53+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: tr\n"
+"Language-Team: tr <LL@li.org>\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: gui.py:56 gui.py:143
+msgid "Extract Annotations"
+msgstr "Notları Çıkar"
+
+#: gui.py:88 gui.py:140
+msgid "Select PDF File"
+msgstr "PDF Dosyası Seç"
+
+#: gui.py:103 gui.py:141
+msgid "Browse"
+msgstr "Gözat"
+
+#: gui.py:111 gui.py:142
+msgid "Page Numbering"
+msgstr "Sayfa Numaralandırma"
+
+#: gui.py:118
+msgid "Page offset:"
+msgstr "Sayfa ofseti:"
+
+#: gui.py:131
+msgid "(-1 for automatic detection)"
+msgstr "(-1 otomatik algılama için)"
+
+#: gui.py:152
+msgid ""
+"PDF Annotation Extractor\n"
+"Version 1.0\n"
+"\n"
+"Copyright (C) 2024 Engin Karahan\n"
+"This program is licensed under GNU GPL v3.\n"
+"\n"
+"https://github.com/EnginKarahan/pdf-annotation-extractor"
+msgstr ""
+"PDF Not Çıkarıcı\n"
+"Sürüm 1.0\n"
+"\n"
+"Telif Hakkı (C) 2024 Engin Karahan\n"
+"Bu program GNU GPL v3 lisansı altında lisanslanmıştır.\n"
+"\n"
+"https://github.com/EnginKarahan/pdf-annotation-extractor"
+
+#: gui.py:164 translations.py:69
+msgid "Select PDF file"
+msgstr "PDF dosyası seç"
+
+#: gui.py:166 pdf_utils.py:233
+msgid "PDF files"
+msgstr "PDF dosyaları"
+
+#: gui.py:167 pdf_utils.py:234
+msgid "All files"
+msgstr "Tüm dosyalar"
+
+#: gui.py:177 gui.py:184 gui.py:210
+msgid "Error"
+msgstr "Hata"
+
+#: gui.py:185
+msgid "The selected file does not exist."
+msgstr "Seçilen dosya mevcut değil."
+
+#: gui.py:201
+msgid "Done! Output saved to: "
+msgstr "Tamamlandı! Çıktı kaydedildi: "
+
+#: gui.py:203
+msgid "Success"
+msgstr "Başarılı"
+
+#: gui.py:204
+msgid ""
+"Annotations were successfully extracted.\n"
+"\n"
+"Output file: {0}"
+msgstr ""
+"Notlar başarıyla çıkarıldı.\n"
+"\n"
+"Çıktı dosyası: {0}"
+
+#: gui.py:213
+msgid "Error during processing"
+msgstr "İşlem sırasında hata"
+
+#: pdf_utils.py:49
+msgid "Text Note"
+msgstr "Metin Notu"
+
+#: pdf_utils.py:50
+msgid "Highlight"
+msgstr "Vurgu"
+
+#: pdf_utils.py:51
+msgid "Underline"
+msgstr "Altı Çizili"
+
+#: pdf_utils.py:52
+msgid "Strike Out"
+msgstr "Üstü Çizili"
+
+#: pdf_utils.py:53
+msgid "Square"
+msgstr "Kare"
+
+#: pdf_utils.py:54
+msgid "Circle"
+msgstr "Daire"
+
+#: pdf_utils.py:55
+msgid "Free Text"
+msgstr "Serbest Metin"
+
+#: pdf_utils.py:60
+msgid "The PDF file does not exist: {0}"
+msgstr "PDF dosyası mevcut değil: {0}"
+
+#: pdf_utils.py:71
+msgid "Could not open PDF file: {0}"
+msgstr "PDF dosyası açılamadı: {0}"
+
+#: pdf_utils.py:82 pdf_utils.py:117
+msgid "No PDF document loaded"
+msgstr "PDF belgesi yüklenmedi"
+
+#: pdf_utils.py:99
+msgid "Error detecting page offset: {0}"
+msgstr "Sayfa ofseti algılanırken hata: {0}"
+
+#: pdf_utils.py:121
+msgid "Detecting page offset..."
+msgstr "Sayfa ofseti algılanıyor..."
+
+#: pdf_utils.py:130
+msgid "Processing page {0} of {1}..."
+msgstr "Sayfa işleniyor {0} / {1}..."
+
+#: pdf_utils.py:161
+msgid "Warning: Could not process annotation on page {0}: {1}"
+msgstr "Uyarı: Sayfa {0}'daki not işlenemedi: {1}"
+
+#: pdf_utils.py:182
+msgid "Annotations extracted from: {0}\n"
+msgstr "Notlar çıkarıldı: {0}\n"
+
+#: pdf_utils.py:183
+msgid "Extraction date: {0}\n"
+msgstr "Çıkarma tarihi: {0}\n"
+
+#: pdf_utils.py:191
+msgid "Page {0}:\n"
+msgstr "Sayfa {0}:\n"
+
+#: translations.py:68
+msgid "PDF Annotation Extractor"
+msgstr "PDF Not Çıkarıcı"
+
+#: translations.py:70
+msgid "Process"
+msgstr "İşle"
+
+#: translations.py:71
+msgid "Processing..."
+msgstr "İşleniyor..."
+
+#: translations.py:72
+msgid "Successfully processed!"
+msgstr "Başarıyla işlendi!"
+
+#: translations.py:73
+msgid "Error occurred: {}"
+msgstr "Hata oluştu: {}"
+
+#: translations.py:74
+msgid "About PDF Annotation Extractor"
+msgstr "PDF Not Çıkarıcı Hakkında"
+
+#: translations.py:75
+msgid "File"
+msgstr "Dosya"
+
+#: translations.py:76
+msgid "Help"
+msgstr "Yardım"
+
+#: translations.py:77
+msgid "About"
+msgstr "Hakkında"
+
+#: translations.py:78
+msgid "Exit"
+msgstr "Çıkış"
+
+#: translations.py:79
+msgid "Open file"
+msgstr "Dosya aç"
+
+#: translations.py:80
+msgid "Save file"
+msgstr "Dosya kaydet"
+
+#: translations.py:81
+msgid "Ready"
+msgstr "Hazır"
+
+#: translations.py:82
+msgid "Processing file..."
+msgstr "Dosya işleniyor..."
+
+#: translations.py:83
+msgid "Done!"
+msgstr "Tamamlandı!"
+
+#: translations.py:84
+msgid "No file selected"
+msgstr "Dosya seçilmedi"
+
+#: translations.py:85
+msgid "Invalid PDF file"
+msgstr "Geçersiz PDF dosyası"
+
+#: translations.py:86
+msgid "Language"
+msgstr "Dil"

@@ -1,0 +1,204 @@
+# German translations for PDF Annotation Extractor
+# Copyright (C) 2024 [Your Name]
+# This file is distributed under the same license as the PDF Annotation
+# Extractor package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PDF Annotation Extractor 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-02 22:07+0100\n"
+"PO-Revision-Date: 2024-02-12 12:00+0100\n"
+"Last-Translator: [Your Name] <your.email@example.com>\n"
+"Language: de\n"
+"Language-Team: German\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.16.0\n"
+
+#: gui.py:56 gui.py:143
+msgid "Extract Annotations"
+msgstr "Annotationen extrahieren"
+
+#: gui.py:88 gui.py:140
+msgid "Select PDF File"
+msgstr "PDF-Datei auswählen"
+
+#: gui.py:103 gui.py:141
+msgid "Browse"
+msgstr "Durchsuchen"
+
+#: gui.py:111 gui.py:142
+msgid "Page Numbering"
+msgstr "Seitennummerierung"
+
+#: gui.py:118
+msgid "Page offset:"
+msgstr "Seitenoffset:"
+
+#: gui.py:131
+msgid "(-1 for automatic detection)"
+msgstr "(-1 für automatische Erkennung)"
+
+#: gui.py:152
+msgid ""
+"PDF Annotation Extractor\n"
+"Version 1.0\n"
+"\n"
+"Copyright (C) 2024 Engin Karahan\n"
+"This program is licensed under GNU GPL v3.\n"
+"\n"
+"https://github.com/EnginKarahan/pdf-annotation-extractor"
+msgstr ""
+
+#: gui.py:164
+#, fuzzy
+#| msgid "Select PDF File"
+msgid "Select PDF file"
+msgstr "PDF-Datei auswählen"
+
+#: gui.py:166 pdf_utils.py:233
+msgid "PDF files"
+msgstr "PDF-Dateien"
+
+#: gui.py:167 pdf_utils.py:234
+msgid "All files"
+msgstr "Alle Dateien"
+
+#: gui.py:177 gui.py:184 gui.py:210
+msgid "Error"
+msgstr "Fehler"
+
+#: gui.py:185
+msgid "The selected file does not exist."
+msgstr "Die ausgewählte Datei existiert nicht."
+
+#: gui.py:201
+msgid "Done! Output saved to: "
+msgstr "Fertig! Ausgabe gespeichert in: "
+
+#: gui.py:203
+msgid "Success"
+msgstr "Erfolg"
+
+#: gui.py:204
+msgid ""
+"Annotations were successfully extracted.\n"
+"\n"
+"Output file: {0}"
+msgstr ""
+"Annotationen wurden erfolgreich extrahiert.\n"
+"\n"
+"Ausgabedatei: {0}"
+
+#: gui.py:213
+msgid "Error during processing"
+msgstr "Fehler bei der Verarbeitung"
+
+#: pdf_utils.py:49
+msgid "Text Note"
+msgstr "Textnotiz"
+
+#: pdf_utils.py:50
+msgid "Highlight"
+msgstr "Hervorhebung"
+
+#: pdf_utils.py:51
+msgid "Underline"
+msgstr "Unterstreichung"
+
+#: pdf_utils.py:52
+msgid "Strike Out"
+msgstr "Durchgestrichen"
+
+#: pdf_utils.py:53
+msgid "Square"
+msgstr "Rechteck"
+
+#: pdf_utils.py:54
+msgid "Circle"
+msgstr "Kreis"
+
+#: pdf_utils.py:55
+msgid "Free Text"
+msgstr "Freitext"
+
+#: pdf_utils.py:60
+msgid "The PDF file does not exist: {0}"
+msgstr "Die PDF-Datei existiert nicht: {0}"
+
+#: pdf_utils.py:71
+msgid "Could not open PDF file: {0}"
+msgstr "PDF-Datei konnte nicht geöffnet werden: {0}"
+
+#: pdf_utils.py:82 pdf_utils.py:117
+msgid "No PDF document loaded"
+msgstr "Kein PDF-Dokument geladen"
+
+#: pdf_utils.py:99
+msgid "Error detecting page offset: {0}"
+msgstr "Fehler beim Erkennen des Seitenoffsets: {0}"
+
+#: pdf_utils.py:121
+msgid "Detecting page offset..."
+msgstr "Erkenne Seitenoffset..."
+
+#: pdf_utils.py:130
+msgid "Processing page {0} of {1}..."
+msgstr "Verarbeite Seite {0} von {1}..."
+
+#: pdf_utils.py:161
+msgid "Warning: Could not process annotation on page {0}: {1}"
+msgstr "Warnung: Konnte Annotation auf Seite {0} nicht verarbeiten: {1}"
+
+#: pdf_utils.py:182
+#, fuzzy
+#| msgid "Annotations extracted from: {0}"
+msgid "Annotations extracted from: {0}\n"
+msgstr "Extrahierte Annotationen aus: {0}"
+
+#: pdf_utils.py:183
+#, fuzzy
+#| msgid "Extraction date: {0}"
+msgid "Extraction date: {0}\n"
+msgstr "Extraktionsdatum: {0}"
+
+#: pdf_utils.py:191
+#, fuzzy
+#| msgid "Page {0}:"
+msgid "Page {0}:\n"
+msgstr "Seite {0}:"
+
+#~ msgid "Created"
+#~ msgstr "Erstellt"
+
+#~ msgid "Modified"
+#~ msgstr "Geändert"
+
+# Menu items
+#~ msgid "File"
+#~ msgstr "Datei"
+
+#~ msgid "Language"
+#~ msgstr "Sprache"
+
+#~ msgid "Help"
+#~ msgstr "Hilfe"
+
+#~ msgid "Exit"
+#~ msgstr "Beenden"
+
+#~ msgid "About"
+#~ msgstr "Über"
+
+#~ msgid "About PDF Annotation Extractor"
+#~ msgstr "Über PDF Annotation Extractor"
+
+#~ msgid "Status: Ready"
+#~ msgstr "Status: Bereit"
+
+#~ msgid "Status: Processing..."
+#~ msgstr "Status: Verarbeitung..."
+

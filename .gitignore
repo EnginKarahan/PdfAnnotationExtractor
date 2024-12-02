@@ -2,35 +2,40 @@
 __pycache__/
 *.py[cod]
 *$py.class
-*.so
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
 
 # PyInstaller
-dist/
 build/
+dist/
 *.spec
 
 # IDE
 .idea/
 .vscode/
-*.swp
-*.swo
 
-# Betriebssystem
+# Virtual Environment
+venv/
+env/
+.env/
+
+# Operating System
 .DS_Store
 Thumbs.db
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*~
+
+# PDF Test files
+*.pdf
+
+# Log files
+*.log
+
+# Database
+*.db
+*.sqlite3
+
+# Local development settings
+.env

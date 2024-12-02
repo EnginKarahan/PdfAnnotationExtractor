@@ -140,9 +140,9 @@ class PDFAnnotationExtractor(tk.Tk):
 
     def show_about(self):
         about_text = _("""PDF Annotation Extractor
-Version 1.0
+Version 0.0.1-alpha
 
-Copyright (C) 2024 [Your Name]
+Copyright (C) 2024 Engin Karahan - https://karahan.net
 This program is licensed under GNU GPL v3.""")
 
         messagebox.showinfo(MESSAGES['about_title'], about_text)

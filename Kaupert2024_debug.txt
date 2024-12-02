@@ -1,0 +1,156 @@
+
+=== Seite 1 ===
+
+=== Seite 2 ===
+
+Annotation gefunden:
+Typ: (8, 'Highlight')
+Alle Properties: {'content': 'Wie können sich diese Unterschiede, die nicht sofort einen Bruch bedeuten und besonders die Gemeinsamkeiten in einer zunehmenden diversifizierten und pluralen Gesellschaften identifiziert werden?', 'name': '', 'title': 'ekara', 'creationDate': "D:20241127081131+01'00'", 'modDate': "D:20241127081316+01'00'", 'subject': 'Kommentar zu Text', 'id': '0681b7e2-6134-408a-a02a-39cb7f42c637'}
+
+Rect: Rect(74.53079986572266, 197.4990234375, 509.635986328125, 293.8060302734375)
+Xref: 307
+
+Annotation gefunden:
+Typ: (8, 'Highlight')
+Alle Properties: {'content': 'Eine zusätzliche Herausforderung über die Individualisierung und die Zugehörigkeit zu Milieus bildet die Herausbildung von Identitätsenklaven, die aus den unterschiedlichen Gründen den Rückzug in weitgehend homogen imaginierte Identitätsräume als adäquate Form der Begegnung der Herausforderung der aktuellen Gesellschaft ansehen.', 'name': '', 'title': 'ekara', 'creationDate': "D:20241127081325+01'00'", 'modDate': "D:20241127081747+01'00'", 'subject': 'Kommentar zu Text', 'id': '878018cb-4466-4da8-a9e3-6eeb9b470ddb'}
+
+Rect: Rect(74.53089904785156, 365.5199890136719, 487.2539978027344, 461.8269958496094)
+Xref: 305
+
+Annotation gefunden:
+Typ: (8, 'Highlight')
+Alle Properties: {'content': 'Die Selbstverständlichkeit des Interesses der Bürger*innen füreinander wird gerade durch den Identitätsdiskurs aus dem Raum der Normalität hinausbefördert.', 'name': '', 'title': 'ekara', 'creationDate': "D:20241127081753+01'00'", 'modDate': "D:20241127081842+01'00'", 'subject': 'Kommentar zu Text', 'id': '8a532aa6-3b64-46ab-ba7c-89e673a13ae3'}
+
+Rect: Rect(74.53089904785156, 437.52899169921875, 481.9880065917969, 509.8330078125)
+Xref: 303
+
+Annotation gefunden:
+Typ: (8, 'Highlight')
+Alle Properties: {'content': 'Welche Rolle spielen diese Institutionen heute und welche Rolle kann ihnen in Zeiten des Institutionszerfalls noch weiter zugeschrieben werden. Insbesondere stellt sich die Frage, inwieweit neuer demographische Entwicklungen in diesen Institutionen adäquat abgebildet werden. \rWir haben es mit einer immer kleinteiligeren, fluiden Zusammensetzung der Gesellschaft aus Institutionen, Interessengruppen und nur schwer greifbaren, auf die gemeinsame Emotionalisierung aufbauenden Segmenten zu tun. \rInwieweit werden besonders in Gewerkschaften und Genossenschaften die mittlerweile zu ihrer Gründungszeit völlig veränderte Zusammensetzung der Arbeiterschaft gespiegelt.', 'name': '', 'title': 'ekara', 'creationDate': "D:20241127081901+01'00'", 'modDate': "D:20241127082602+01'00'", 'subject': 'Kommentar zu Text', 'id': '1e7fb65c-7bd2-41f6-b830-eccf861d10bb'}
+
+Rect: Rect(74.53089904785156, 533.541015625, 515.8060302734375, 653.8510131835938)
+Xref: 301
+
+=== Seite 3 ===
+
+Annotation gefunden:
+Typ: (8, 'Highlight')
+Alle Properties: {'content': 'Im migrantischen Milieus stellen die Moscheeverbände ohne etablierte Kirchen zu sein mit die größten zivilgesellschaftlichen Strukturen dar. Diese muss man jedoch als Akteure ansehen, die sich nun seit Jahren aktiv weigern, Platz am Runden Tisch zu nehmen.', 'name': '', 'title': 'ekara', 'creationDate': "D:20241127082614+01'00'", 'modDate': "D:20241127082904+01'00'", 'subject': 'Kommentar zu Text', 'id': 'bf5a49d8-b8f8-4229-8006-47fc8cc8e425'}
+
+Rect: Rect(74.5353012084961, 260.53900146484375, 516.8900146484375, 452.8580017089844)
+Xref: 299
+
+Annotation gefunden:
+Typ: (8, 'Highlight')
+Alle Properties: {'content': 'Mit der identitätspolitischen Zuspitzung von Konflikten wird die demokratische Basis des Zusammenlebens viel weiter in Frage gestellt, als es die Autoren annehmen. Mittlerweile haben wir es nicht nur mit identitätspolitischen Abgrenzung aus der Gesellschaft heraus zu tun. Vielmehr drängen auch über transnationale Kanäle Identiätsnarrative in die Gesellschaft, die eine völlige Gegensatzerzählung anbieten. Verknüpt mit der Selbstviktimisierung mancher Gruppen neben tatsächlich vorhandener Diskriminierungserfahrungen werden somit identitätspolitische Wagenburgen aufgebaut, die von der völligen Abkapselung von der Gesellschaft leben.', 'name': '', 'title': 'ekara', 'creationDate': "D:20241202131448+01'00'", 'modDate': "D:20241202132108+01'00'", 'subject': 'Kommentar zu Text', 'id': '94ec44fa-5d31-4410-8ded-184329cd9a1d'}
+
+Rect: Rect(74.5353012084961, 524.572021484375, 502.5530090332031, 692.8890380859375)
+Xref: 297
+
+=== Seite 4 ===
+
+Annotation gefunden:
+Typ: (8, 'Highlight')
+Alle Properties: {'content': 'Insbesondere wird versucht, gerade jungen Migranten/Muslimen eine Verortung anzubieten, die eine gleichberechtigte Teilhabe verunmöglicht und die Heimstatt nur noch in der selbst geschaffenen Enklave gefunden werden kann. Bereits die Existenz eines "runden Tisches" an den man sich setzen könnte, wird in Frage gestellt.', 'name': '', 'title': 'ekara', 'creationDate': "D:20241202132114+01'00'", 'modDate': "D:20241202132322+01'00'", 'subject': 'Kommentar zu Text', 'id': '8c32052d-7f65-42f6-b4f5-48723cbe8a51'}
+
+Rect: Rect(74.5353012084961, 20.51300048828125, 517.3090209960938, 212.8289794921875)
+Xref: 295
+
+Annotation gefunden:
+Typ: (8, 'Highlight')
+Alle Properties: {'content': 'Hinzu kommt, dass sich selbst innerhalb von Milieus zu Schichtungen gekommen ist. Die Frage, wo das eine Milieu anfängt, das andere aufhört und wo sich völlig andersartige Milieus herausbilden wird immer schwieriger zu beantworten.', 'name': '', 'title': 'ekara', 'creationDate': "D:20241202133731+01'00'", 'modDate': "D:20241202133849+01'00'", 'subject': 'Kommentar zu Text', 'id': '6f17e3a8-9f8c-41cd-9baf-b8e1ef66163c'}
+
+Rect: Rect(74.5353012084961, 452.56298828125, 511.1929931640625, 596.8759765625)
+Xref: 293
+
+=== Seite 5 ===
+
+Annotation gefunden:
+Typ: (8, 'Highlight')
+Alle Properties: {'content': 'Respekt kann eine sinnvolle Ansprache sein. Jedoch wird es immer wieder der Durchbrechung einer identitären Barriere brauchen, die eine zielgruppenspezifisches Narrativ zur Überwindung des Opfernarrativs und der Herstellung von Selbstermächtigungspotentialen dienen kann.', 'name': '', 'title': 'ekara', 'creationDate': "D:20241202135000+01'00'", 'modDate': "D:20241202135125+01'00'", 'subject': 'Kommentar zu Text', 'id': 'd25faf02-7ca2-41b4-9071-190154edd494'}
+
+Rect: Rect(74.5353012084961, 369.26800537109375, 516.7550048828125, 585.5910034179688)
+Xref: 291
+
+Annotation gefunden:
+Typ: (8, 'Highlight')
+Alle Properties: {'content': 'Das Narrativ des Zusammenhalts wird in diesen Kontexten nicht als selbstverständlich erstrebenswert sondern als Überwältigungserzählung der vermeintlich privilegierten homogenen Mehrheit über eine ebenfalls homogene, aber benachteiligte Minderheit dargestellt.', 'name': '', 'title': 'ekara', 'creationDate': "D:20241202135229+01'00'", 'modDate': "D:20241202140123+01'00'", 'subject': 'Kommentar zu Text', 'id': '9c893ff1-14ce-4272-81f6-a1a1a6727d8c'}
+
+Rect: Rect(74.5353012084961, 561.2919921875, 519.14501953125, 753.611572265625)
+Xref: 289
+
+=== Seite 6 ===
+
+Annotation gefunden:
+Typ: (8, 'Highlight')
+Alle Properties: {'content': 'Wie kann das gesellschaftliche Selbstbild greifbar gemacht werden? Handlungsorientierte Alternativen.', 'name': '', 'title': 'ekara', 'creationDate': "D:20241202140251+01'00'", 'modDate': "D:20241202140331+01'00'", 'subject': 'Kommentar zu Text', 'id': 'cb7dc8f1-e609-4ff5-af09-384546023b4b'}
+
+Rect: Rect(74.5353012084961, 93.26800537109375, 508.4930114746094, 285.5880126953125)
+Xref: 287
+
+Annotation gefunden:
+Typ: (8, 'Highlight')
+Alle Properties: {'content': 'Zur Betrachtung der Zukunft gehört es auch, die demographische Entwicklung der nächsten Jahrzehnte bereits jetzt zu berücksichtigen. Nicht nur die allgemeine Bevölkerungsstatistik, sondern auch die Schulstatistik in die Analyse aufnehmen.', 'name': '', 'title': 'ekara', 'creationDate': "D:20241202140426+01'00'", 'modDate': "D:20241202140527+01'00'", 'subject': 'Kommentar zu Text', 'id': '3e5cd7ad-b556-44df-a259-ee336cee460a'}
+
+Rect: Rect(74.5353012084961, 405.3070068359375, 514.2849731445312, 621.6300048828125)
+Xref: 285
+
+=== Seite 7 ===
+
+Annotation gefunden:
+Typ: (8, 'Highlight')
+Alle Properties: {'content': 'Berechtigte Sorge', 'name': '', 'title': 'ekara', 'creationDate': "D:20241202140613+01'00'", 'modDate': "D:20241202140622+01'00'", 'subject': 'Kommentar zu Text', 'id': '768a7f64-445e-4371-b0ca-2ad36e71bdfe'}
+
+Rect: Rect(74.5353012084961, 44.51300048828125, 519.60400390625, 140.82000732421875)
+Xref: 283
+
+Annotation gefunden:
+Typ: (8, 'Highlight')
+Alle Properties: {'content': 'Anerkennung der Generationenleistung über die Arbeitszeit hinaus.', 'name': '', 'title': 'ekara', 'creationDate': "D:20241202140827+01'00'", 'modDate': "D:20241202140851+01'00'", 'subject': 'Kommentar zu Text', 'id': '51fe4b16-8719-4d99-8882-9faa348181ab'}
+
+Rect: Rect(74.5353012084961, 308.54498291015625, 517.1740112304688, 476.86199951171875)
+Xref: 281
+
+=== Seite 8 ===
+
+Annotation gefunden:
+Typ: (8, 'Highlight')
+Alle Properties: {'content': 'Eine Erfolgte Einwanderung führt nicht zu einer automatischen Sensibilisierung für die Bedarfe von späteren Einwanderern. Hier ist ein kritischer Blick geboten.', 'name': '', 'title': 'ekara', 'creationDate': "D:20241202140958+01'00'", 'modDate': "D:20241202141043+01'00'", 'subject': 'Kommentar zu Text', 'id': '648dfab3-9264-4b12-a541-6f64d12ea7da'}
+
+Rect: Rect(74.5353012084961, 20.51300048828125, 519.927978515625, 92.81402587890625)
+Xref: 279
+
+Annotation gefunden:
+Typ: (8, 'Highlight')
+Alle Properties: {'content': 'Gerade die Arbeiterschaft sieht die ökologische Herausforderung als Einbuße von hart erarbeiteter Lebensqualität und hart erkämpfter weniger Privilegien an. Ökologie als Bedrohung des Wenigen, dass man sich hart erkämpfen musste.', 'name': '', 'title': 'ekara', 'creationDate': "D:20241202141141+01'00'", 'modDate': "D:20241202141256+01'00'", 'subject': 'Kommentar zu Text', 'id': 'd019fca3-372d-477b-981d-9ba385395666'}
+
+Rect: Rect(74.5353012084961, 380.5539855957031, 514.4329833984375, 524.8670043945312)
+Xref: 277
+
+=== Seite 9 ===
+
+Annotation gefunden:
+Typ: (8, 'Highlight')
+Alle Properties: {'content': 'Handlungsorientierung?', 'name': '', 'title': 'ekara', 'creationDate': "D:20241202141457+01'00'", 'modDate': "D:20241202141507+01'00'", 'subject': 'Kommentar zu Text', 'id': '06857ff1-4bd6-4f7a-979e-cd7dff2a72b7'}
+
+Rect: Rect(74.5353012084961, 68.5150146484375, 496.114013671875, 212.8289794921875)
+Xref: 275
+
+=== Seite 10 ===
+
+Annotation gefunden:
+Typ: (8, 'Highlight')
+Alle Properties: {'content': 'Soziale Mischung als Vielfalt?', 'name': '', 'title': 'ekara', 'creationDate': "D:20241202141912+01'00'", 'modDate': "D:20241202141927+01'00'", 'subject': 'Kommentar zu Text', 'id': '700206c8-83c6-4ce4-b356-1e5a8a952482'}
+
+Rect: Rect(74.5353012084961, 116.52099609375, 514.8519897460938, 380.8489990234375)
+Xref: 273
+
+=== Seite 11 ===
+
+=== Seite 12 ===
+
+=== Seite 13 ===
+
+=== Seite 14 ===
+
+=== Seite 15 ===

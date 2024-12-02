@@ -62,7 +62,29 @@ python -m PyInstaller --onefile --windowed main.py
 
 ## Documentation
 
-For detailed documentation, please visit the [Wiki](https://github.com/EnginKarahan/pdf-annotation-extractor/wiki).
+### Basic Usage
+
+This tool allows you to extract annotations from PDF files and export them to a markdown file. The program processes different types of annotations including highlights, underlines, and comments.
+
+### Main Features
+- Extract annotations from PDF files
+- Process different annotation types (highlights, comments, underlines)
+- Detect and use internal page numbers of the PDF
+- Export annotations to markdown format
+- Simple graphical user interface
+
+### How to Use
+1. Start the application
+2. Click "Select PDF" to choose your PDF file
+3. Click "Extract" to process the annotations
+   (The markdown file will be saved in the same directory as the source PDF)
+
+### Export Format
+The exported markdown file contains:
+- Document title
+- Page numbers (as they appear in the PDF)
+- Annotation text and comments
+- Export date and time
 
 ## Contributing
 

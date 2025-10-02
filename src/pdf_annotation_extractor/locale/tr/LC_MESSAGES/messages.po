@@ -7,220 +7,487 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PROJECT VERSION\n"
 "Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
-"POT-Creation-Date: 2024-12-02 22:07+0100\n"
-"PO-Revision-Date: 2024-12-02 21:53+0100\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2025-10-02 02:26+0200\n"
+"PO-Revision-Date: 2025-10-02 02:25+0200\n"
+"Last-Translator: \n"
 "Language: tr\n"
 "Language-Team: tr <LL@li.org>\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.16.0\n"
+"Generated-By: Babel 2.17.0\n"
 
-#: gui.py:56 gui.py:143
-msgid "Extract Annotations"
-msgstr "Notları Çıkar"
-
-#: gui.py:88 gui.py:140
-msgid "Select PDF File"
-msgstr "PDF Dosyası Seç"
-
-#: gui.py:103 gui.py:141
-msgid "Browse"
-msgstr "Gözat"
-
-#: gui.py:111 gui.py:142
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui-old.py:102
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui-old.py:133
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui.py:150
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui.py:192
 msgid "Page Numbering"
 msgstr "Sayfa Numaralandırma"
 
-#: gui.py:118
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui-old.py:109
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui.py:157
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui.py:196
 msgid "Page offset:"
 msgstr "Sayfa ofseti:"
 
-#: gui.py:131
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui-old.py:122
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui.py:171
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui.py:198
 msgid "(-1 for automatic detection)"
 msgstr "(-1 otomatik algılama için)"
 
-#: gui.py:152
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui-old.py:142
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui.py:217
 msgid ""
 "PDF Annotation Extractor\n"
-"Version 1.0\n"
+"Version 0.0.1-alpha\n"
 "\n"
-"Copyright (C) 2024 Engin Karahan\n"
-"This program is licensed under GNU GPL v3.\n"
-"\n"
-"https://github.com/EnginKarahan/pdf-annotation-extractor"
+"Copyright (C) 2024 Engin Karahan - https://karahan.net\n"
+"This program is licensed under GNU GPL v3."
 msgstr ""
-"PDF Not Çıkarıcı\n"
-"Sürüm 1.0\n"
+"PDF Ek Açıklama Çıkarıcı\n"
+"Sürüm 0.0.1-alpha\n"
 "\n"
-"Telif Hakkı (C) 2024 Engin Karahan\n"
-"Bu program GNU GPL v3 lisansı altında lisanslanmıştır.\n"
-"\n"
-"https://github.com/EnginKarahan/pdf-annotation-extractor"
+"Telif Hakkı (C) 2024 Engin Karahan - https://karahan.net\n"
+"Bu program GNU GPL v3 lisansı altında dağıtılmaktadır."
 
-#: gui.py:164
-msgid "Select PDF file"
-msgstr "PDF dosyası seç"
-
-#: gui.py:166 pdf_utils.py:233
-msgid "PDF files"
-msgstr "PDF dosyaları"
-
-#: gui.py:167 pdf_utils.py:234
-msgid "All files"
-msgstr "Tüm dosyalar"
-
-#: gui.py:177 gui.py:184 gui.py:210
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui-old.py:165
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui-old.py:172
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui-old.py:197
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui.py:240
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui.py:247
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui.py:273
 msgid "Error"
 msgstr "Hata"
 
-#: gui.py:185
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui-old.py:173
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui.py:248
 msgid "The selected file does not exist."
 msgstr "Seçilen dosya mevcut değil."
 
-#: gui.py:201
-msgid "Done! Output saved to: "
-msgstr "Tamamlandı! Çıktı kaydedildi: "
-
-#: gui.py:203
-msgid "Success"
-msgstr "Başarılı"
-
-#: gui.py:204
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui-old.py:191
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/gui.py:266
+#, python-brace-format
 msgid ""
 "Annotations were successfully extracted.\n"
 "\n"
 "Output file: {0}"
 msgstr ""
-"Notlar başarıyla çıkarıldı.\n"
+"Ek açıklamalar başarıyla çıkarıldı.\n"
 "\n"
 "Çıktı dosyası: {0}"
 
-#: gui.py:213
-msgid "Error during processing"
-msgstr "İşlem sırasında hata"
-
-#: pdf_utils.py:49
-msgid "Text Note"
-msgstr "Metin Notu"
-
-#: pdf_utils.py:50
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:48
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:48
 msgid "Highlight"
 msgstr "Vurgu"
 
-#: pdf_utils.py:51
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:49
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:49
 msgid "Underline"
 msgstr "Altı Çizili"
 
-#: pdf_utils.py:52
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:50
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:50
+msgid "StrikeOut"
+msgstr "Üstü Çizili"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:51
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:51
+msgid "Squiggly"
+msgstr "Dalgalı"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:52
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:52
+msgid "Rectangle/Square"
+msgstr "Dikdörtgen/Kare"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:53
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:53
+msgid "Circle/Ellipse"
+msgstr "Daire/Elips"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:54
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:54
+msgid "Line"
+msgstr "Çizgi"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:55
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:55
+msgid "Polyline"
+msgstr "Çoklu çizgi"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:56
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:56
+msgid "Text/Sticky Note/Highlight"
+msgstr "Metin/Yapışkan Not/Vurgu"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:57
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:57
 msgid "Strike Out"
 msgstr "Üstü Çizili"
 
-#: pdf_utils.py:53
-msgid "Square"
-msgstr "Kare"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:58
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:58
+msgid "Stamp"
+msgstr "Damga"
 
-#: pdf_utils.py:54
-msgid "Circle"
-msgstr "Daire"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:59
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:59
+msgid "Caret"
+msgstr "Şapka işareti"
 
-#: pdf_utils.py:55
-msgid "Free Text"
-msgstr "Serbest Metin"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:60
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:60
+msgid "Ink"
+msgstr "Mürekkep"
 
-#: pdf_utils.py:60
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:61
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:61
+msgid "Popup"
+msgstr "Açılır pencere"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:62
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:62
+msgid "FileAttachment"
+msgstr "Dosya eki"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:63
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:63
+msgid "Sound"
+msgstr "Ses"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:64
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:64
+msgid "Movie"
+msgstr "Film"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:65
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:65
+msgid "Widget"
+msgstr "Bileşen"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:66
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:66
+msgid "Screen"
+msgstr "Ekran"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:67
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:67
+msgid "PrinterMark"
+msgstr "Baskı işareti"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:68
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:68
+msgid "TrapNet"
+msgstr "TrapNet"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:69
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:69
+msgid "Watermark"
+msgstr "Filigran"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:70
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:70
+msgid "3D"
+msgstr "3B"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:71
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:71
+msgid "Redact"
+msgstr "Sansürle"
+
+# | msgid "The PDF file does not exist: {path}"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:76
+#, fuzzy, python-brace-format
 msgid "The PDF file does not exist: {0}"
-msgstr "PDF dosyası mevcut değil: {0}"
+msgstr "PDF dosyası mevcut değil: {path}"
 
-#: pdf_utils.py:71
+# | msgid "Could not open PDF file: {error}"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:87
+#, fuzzy, python-brace-format
 msgid "Could not open PDF file: {0}"
-msgstr "PDF dosyası açılamadı: {0}"
+msgstr "PDF dosyası açılamadı: {error}"
 
-#: pdf_utils.py:82 pdf_utils.py:117
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:95
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:134
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:99
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:146
 msgid "No PDF document loaded"
 msgstr "PDF belgesi yüklenmedi"
 
-#: pdf_utils.py:99
-msgid "Error detecting page offset: {0}"
-msgstr "Sayfa ofseti algılanırken hata: {0}"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:117
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:119
+msgid "Page"
+msgstr ""
 
-#: pdf_utils.py:121
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:117
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:123
+msgid "Title page/Front matter"
+msgstr "Başlık sayfası/Önsöz"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:119
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:128
+msgid "Internal"
+msgstr "Dahili"
+
+# | msgid "Could not extract text for annotation on page {page}: {error}"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:127
+#, fuzzy
+msgid "Could not extract text for annotation on page"
+msgstr "{page}. sayfadaki ek açıklamanın metni çıkarılamadı: {error}"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:138
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:150
 msgid "Detecting page offset..."
 msgstr "Sayfa ofseti algılanıyor..."
 
-#: pdf_utils.py:130
+# | msgid "Processing page {current} of {total}..."
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:147
+#, fuzzy, python-brace-format
 msgid "Processing page {0} of {1}..."
-msgstr "Sayfa işleniyor {0} / {1}..."
+msgstr "Sayfa işleniyor {current} / {total}..."
 
-#: pdf_utils.py:161
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:156
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:172
+msgid "Unknown Type"
+msgstr "Bilinmeyen Tür"
+
+# | msgid "Warning: Could not process annotation on page {page}: {error}"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:184
+#, fuzzy, python-brace-format
 msgid "Warning: Could not process annotation on page {0}: {1}"
-msgstr "Uyarı: Sayfa {0}'daki not işlenemedi: {1}"
+msgstr "Uyarı: {page}. sayfadaki ek açıklama işlenemedi: {error}"
 
-#: pdf_utils.py:182
-msgid "Annotations extracted from: {0}\n"
-msgstr "Notlar çıkarıldı: {0}\n"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:195
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:215
+msgid "PDF Annotations Export"
+msgstr "PDF Ek Açıklama Dışa Aktarma"
 
-#: pdf_utils.py:183
-msgid "Extraction date: {0}\n"
-msgstr "Çıkarma tarihi: {0}\n"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:196
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:218
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:31
+msgid "File"
+msgstr "Dosya"
 
-#: pdf_utils.py:191
-msgid "Page {0}:\n"
-msgstr "Sayfa {0}:\n"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:197
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:220
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:224
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:277
+msgid "Date"
+msgstr "Tarih"
 
-#~ msgid "PDF Annotation Extractor"
-#~ msgstr "PDF Not Çıkarıcı"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:198
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:230
+msgid "Total Pages"
+msgstr "Toplam Sayfa"
 
-#~ msgid "Process"
-#~ msgstr "İşle"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:199
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:236
+msgid "Page Numbering Starts At"
+msgstr "Sayfa numaralandırma başlangıcı"
 
-#~ msgid "Processing..."
-#~ msgstr "İşleniyor..."
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:211
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:253
+msgid "Highlighted Text"
+msgstr "Vurgulanan Metin"
 
-#~ msgid "Successfully processed!"
-#~ msgstr "Başarıyla işlendi!"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:214
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:261
+msgid "Comment"
+msgstr "Yorum"
 
-#~ msgid "Error occurred: {}"
-#~ msgstr "Hata oluştu: {}"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils-old.py:217
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:269
+msgid "Author"
+msgstr "Yazar"
 
-#~ msgid "About PDF Annotation Extractor"
-#~ msgstr "PDF Not Çıkarıcı Hakkında"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:77
+#, python-brace-format
+msgid "The PDF file does not exist: {path}"
+msgstr "PDF dosyası mevcut değil: {path}"
 
-#~ msgid "File"
-#~ msgstr "Dosya"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:90
+#, python-brace-format
+msgid "Could not open PDF file: {error}"
+msgstr "PDF dosyası açılamadı: {error}"
 
-#~ msgid "Help"
-#~ msgstr "Yardım"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:121
+#, python-brace-format
+msgid "Page {absolute} ({section})"
+msgstr "Sayfa {absolute} ({section})"
 
-#~ msgid "About"
-#~ msgstr "Hakkında"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:126
+#, python-brace-format
+msgid "Page {absolute} ({label}: {internal})"
+msgstr "Sayfa {absolute} ({label}: {internal})"
 
-#~ msgid "Exit"
-#~ msgstr "Çıkış"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:138
+#, python-brace-format
+msgid "Could not extract text for annotation on page {page}: {error}"
+msgstr "{page}. sayfadaki ek açıklamanın metni çıkarılamadı: {error}"
 
-#~ msgid "Open file"
-#~ msgstr "Dosya aç"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:160
+#, python-brace-format
+msgid "Processing page {current} of {total}..."
+msgstr "Sayfa işleniyor {current} / {total}..."
 
-#~ msgid "Save file"
-#~ msgstr "Dosya kaydet"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:201
+#, python-brace-format
+msgid "Warning: Could not process annotation on page {page}: {error}"
+msgstr "Uyarı: {page}. sayfadaki ek açıklama işlenemedi: {error}"
 
-#~ msgid "Ready"
-#~ msgstr "Hazır"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:217
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:223
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:229
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:235
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:268
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:276
+#, python-brace-format
+msgid "**{label}:** {value}\n"
+msgstr "**{label}:** {value}\n"
 
-#~ msgid "Processing file..."
-#~ msgstr "Dosya işleniyor..."
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:252
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/pdf_utils.py:260
+#, python-brace-format
+msgid ""
+"**{label}:** {value}\n"
+"\n"
+msgstr ""
+"**{label}:** {value}\n"
+"\n"
 
-#~ msgid "Done!"
-#~ msgstr "Tamamlandı!"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:23
+msgid "PDF Annotation Extractor"
+msgstr "PDF Not Çıkarıcı"
 
-#~ msgid "No file selected"
-#~ msgstr "Dosya seçilmedi"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:24
+msgid "Select PDF file"
+msgstr "PDF dosyası seç"
 
-#~ msgid "Invalid PDF file"
-#~ msgstr "Geçersiz PDF dosyası"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:25
+msgid "Process"
+msgstr "İşle"
 
-#~ msgid "Language"
-#~ msgstr "Dil"
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:26
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:44
+msgid "Processing..."
+msgstr "İşleniyor..."
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:27
+msgid "Successfully processed!"
+msgstr "Başarıyla işlendi!"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:28
+#, python-brace-format
+msgid "Error occurred: {}"
+msgstr "Hata oluştu: {}"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:29
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:40
+msgid "No file selected"
+msgstr "Dosya seçilmedi"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:30
+msgid "About PDF Annotation Extractor"
+msgstr "PDF Not Çıkarıcı Hakkında"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:32
+msgid "Help"
+msgstr "Yardım"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:33
+msgid "About"
+msgstr "Hakkında"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:34
+msgid "Exit"
+msgstr "Çıkış"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:35
+msgid "Open file"
+msgstr "Dosya aç"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:36
+msgid "Save file"
+msgstr "Dosya kaydet"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:37
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:43
+msgid "Ready"
+msgstr "Hazır"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:38
+msgid "Processing file..."
+msgstr "Dosya işleniyor..."
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:39
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:45
+msgid "Done!"
+msgstr "Tamamlandı!"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:41
+msgid "Invalid PDF file"
+msgstr "Geçersiz PDF dosyası"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:42
+msgid "Language"
+msgstr "Dil"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:46
+#, python-brace-format
+msgid "Error: {}"
+msgstr "Hata: {}"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:47
+msgid "Select File"
+msgstr "Dosya Seç"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:48
+msgid "Extract Comments"
+msgstr "Yorumları çıkar"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:49
+msgid "Save Comments"
+msgstr "Yorumları kaydet"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:50
+msgid "PDF Files"
+msgstr "PDF Dosyaları"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:51
+msgid "Text Files"
+msgstr "Metin Dosyaları"
+
+#: /home/karahan/Dokumente/GitHub/pdfcomments/src/pdf_annotation_extractor/translations.py:52
+msgid "All Files"
+msgstr "Tüm Dosyalar"
+
+#~ msgid "Select PDF File"
+#~ msgstr "PDF Dosyası Seç"
+
+#~ msgid "Browse"
+#~ msgstr "Gözat"
+
+#~ msgid "Done! Output saved to: "
+#~ msgstr "Tamamlandı! Çıktı kaydedildi: "
+
+#~ msgid "Success"
+#~ msgstr "Başarılı"
+
+#~ msgid "Error during processing"
+#~ msgstr "İşlem sırasında hata"
+
+#~ msgid "Square"
+#~ msgstr "Kare"
+
+#~ msgid "Free Text"
+#~ msgstr "Serbest Metin"
+
+#~ msgid "Error detecting page offset: {0}"
+#~ msgstr "Sayfa ofseti algılanırken hata: {0}"
+
+#~ msgid "Extraction date: {0}\n"
+#~ msgstr "Çıkarma tarihi: {0}\n"
 

@@ -73,7 +73,9 @@ class PDFProcessor:
 
     def __init__(self, pdf_path: str):
         if not os.path.exists(pdf_path):
-            raise PDFProcessingError(_("The PDF file does not exist: {0}").format(pdf_path))
+            raise PDFProcessingError(
+                _("The PDF file does not exist: {path}").format(path=pdf_path)
+            )
         self.pdf_path = pdf_path
         self.doc = None
         self.page_offset = 0
@@ -84,7 +86,9 @@ class PDFProcessor:
             self.doc = fitz.open(self.pdf_path)
             return self
         except Exception as e:
-            raise PDFProcessingError(_("Could not open PDF file: {0}").format(str(e)))
+            raise PDFProcessingError(
+                _("Could not open PDF file: {error}").format(error=str(e))
+            )
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         if self.doc:
@@ -114,9 +118,16 @@ class PDFProcessor:
         internal_number = absolute_number + self.page_offset
 
         if internal_number <= 0:
-            return f"{_('Page')} {absolute_number} ({_('Title page/Front matter')})"
+            return _("Page {absolute} ({section})").format(
+                absolute=absolute_number,
+                section=_("Title page/Front matter")
+            )
         else:
-            return f"{_('Page')} {absolute_number} ({_('Internal')}: {internal_number})"
+            return _("Page {absolute} ({label}: {internal})").format(
+                absolute=absolute_number,
+                label=_("Internal"),
+                internal=internal_number
+            )
 
     def extract_text_from_annotation(self, page, annot, page_num) -> str:
         try:
@@ -124,7 +135,8 @@ class PDFProcessor:
             if text.strip():
                 return text.strip()
         except (AttributeError, ValueError) as e:
-            print(f"{_('Could not extract text for annotation on page')} {page_num + 1}: {str(e)}")
+            message = _("Could not extract text for annotation on page {page}: {error}")
+            print(message.format(page=page_num + 1, error=str(e)))
         return ""
 
     def extract_annotations(self,
@@ -144,8 +156,12 @@ class PDFProcessor:
 
         for page_num in range(self.doc.page_count):
             if progress_callback:
-                progress_callback(_("Processing page {0} of {1}...").format(
-                    page_num + 1, self.doc.page_count))
+                progress_callback(
+                    _("Processing page {current} of {total}...").format(
+                        current=page_num + 1,
+                        total=self.doc.page_count
+                    )
+                )
 
             page = self.doc[page_num]
             internal_page = self.get_page_numbers(page)
@@ -181,8 +197,12 @@ class PDFProcessor:
 
                 except Exception as e:
                     if progress_callback:
-                        progress_callback(_("Warning: Could not process annotation on page {0}: {1}").format(
-                            page_num + 1, str(e)))
+                        progress_callback(
+                            _("Warning: Could not process annotation on page {page}: {error}").format(
+                                page=page_num + 1,
+                                error=str(e)
+                            )
+                        )
 
         return self.annotations
 
@@ -193,10 +213,30 @@ class PDFProcessor:
 
         with open(output_path, 'w', encoding='utf-8') as f:
             f.write(f"# {_('PDF Annotations Export')}\n\n")
-            f.write(f"**{_('File')}:** {self.pdf_path}\n")
-            f.write(f"**{_('Date')}:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n")
-            f.write(f"**{_('Total Pages')}:** {self.doc.page_count}\n")
-            f.write(f"**{_('Page Numbering Starts At')}:** {1 + self.page_offset}\n")
+            f.write(
+                _("**{label}:** {value}\n").format(
+                    label=_("File"),
+                    value=self.pdf_path
+                )
+            )
+            f.write(
+                _("**{label}:** {value}\n").format(
+                    label=_("Date"),
+                    value=datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                )
+            )
+            f.write(
+                _("**{label}:** {value}\n").format(
+                    label=_("Total Pages"),
+                    value=self.doc.page_count
+                )
+            )
+            f.write(
+                _("**{label}:** {value}\n").format(
+                    label=_("Page Numbering Starts At"),
+                    value=1 + self.page_offset
+                )
+            )
             f.write("\n---\n\n")
 
             current_page = None
@@ -208,16 +248,36 @@ class PDFProcessor:
                 f.write(f"### {annotation.type}\n\n")
 
                 if annotation.highlighted_text:
-                    f.write(f"**{_('Highlighted Text')}:** {annotation.highlighted_text}\n\n")
+                    f.write(
+                        _("**{label}:** {value}\n\n").format(
+                            label=_("Highlighted Text"),
+                            value=annotation.highlighted_text
+                        )
+                    )
 
                 if annotation.content:
-                    f.write(f"**{_('Comment')}:** {annotation.content}\n\n")
+                    f.write(
+                        _("**{label}:** {value}\n\n").format(
+                            label=_("Comment"),
+                            value=annotation.content
+                        )
+                    )
 
                 if annotation.title:
-                    f.write(f"**{_('Author')}:** {annotation.title}\n")
+                    f.write(
+                        _("**{label}:** {value}\n").format(
+                            label=_("Author"),
+                            value=annotation.title
+                        )
+                    )
 
                 if annotation.modified_date:
-                    f.write(f"**{_('Date')}:** {annotation.modified_date}\n")
+                    f.write(
+                        _("**{label}:** {value}\n").format(
+                            label=_("Date"),
+                            value=annotation.modified_date
+                        )
+                    )
 
                 f.write("\n---\n\n")
 

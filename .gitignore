@@ -39,3 +39,6 @@ Thumbs.db
 
 # Local development settings
 .env
+src/pdf_annotation_extractor/pdf_utils-old.py
+src/pdf_annotation_extractor/translations-old.py
+src/pdf_annotation_extractor/gui-old.py

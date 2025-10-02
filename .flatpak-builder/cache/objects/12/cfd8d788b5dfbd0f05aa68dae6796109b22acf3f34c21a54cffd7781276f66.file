@@ -1,0 +1,2 @@
+[console_scripts]
+pdf-annotation-extractor = pdf_annotation_extractor.main:main

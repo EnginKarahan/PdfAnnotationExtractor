@@ -1,0 +1,5 @@
+[Runtime]
+name=com.enginkarahan.PdfAnnotationExtractor.Debug
+
+[ExtensionOf]
+ref=app/com.enginkarahan.PdfAnnotationExtractor/x86_64/master

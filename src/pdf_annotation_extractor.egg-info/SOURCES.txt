@@ -5,10 +5,14 @@ requirements.txt
 setup.cfg
 setup.py
 src/pdf_annotation_extractor/__init__.py
+src/pdf_annotation_extractor/__main__.py
 src/pdf_annotation_extractor/compile_translations.py
+src/pdf_annotation_extractor/gui-old.py
 src/pdf_annotation_extractor/gui.py
 src/pdf_annotation_extractor/main.py
+src/pdf_annotation_extractor/pdf_utils-old.py
 src/pdf_annotation_extractor/pdf_utils.py
+src/pdf_annotation_extractor/translations-old.py
 src/pdf_annotation_extractor/translations.py
 src/pdf_annotation_extractor.egg-info/PKG-INFO
 src/pdf_annotation_extractor.egg-info/SOURCES.txt

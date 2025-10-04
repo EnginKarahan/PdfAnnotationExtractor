@@ -11,6 +11,9 @@ jobs:
   build-exe:
     runs-on: windows-latest
 
+    permissions:
+      contents: write
+
     steps:
       # 1. Code aus dem Repository laden
       - name: Checkout repository

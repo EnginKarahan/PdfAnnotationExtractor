@@ -1,0 +1,57 @@
+# .github/workflows/build-windows-exe.yml
+
+name: Build Windows Executable
+
+# Der Workflow wird nur gestartet, wenn ein neuer Tag (z.B. v0.0.3) gepusht wird.
+# Das ist ideal für die Erstellung von Releases.
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  build-exe:
+    # Wir verwenden eine von GitHub bereitgestellte Windows-Maschine.
+    runs-on: windows-latest
+
+    steps:
+      # 1. Code aus dem Repository laden
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2. Python-Umgebung einrichten
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          # Stelle sicher, dass diese Version zu deinem Projekt passt.
+          python-version: '3.11' 
+
+      # 3. Alle Abhängigkeiten aus requirements.txt installieren
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pyinstaller
+
+      # 4. Die Übersetzungsdateien (.mo) kompilieren
+      # Dein Skript `compile_translations.py` wird ausgeführt, um sicherzustellen,
+      # dass die .mo-Dateien auf dem neuesten Stand sind.
+      - name: Compile translations
+        run: python pdf_annotation_extractor/compile_translations.py
+
+      # 5. PyInstaller ausführen, um die .exe zu erstellen
+      # Dies ist der wichtigste und für dein Projekt angepasste Schritt.
+      - name: Build executable with PyInstaller
+        run: |
+          pyinstaller --noconfirm --onefile --windowed `
+            --name "pdf-annotation-extractor" `
+            --icon "assets/icon.ico" `
+            --add-data "pdf_annotation_extractor/locale;pdf_annotation_extractor/locale" `
+            pdf_annotation_extractor/main.py
+
+      # 6. Release auf GitHub erstellen und die .exe als Anhang hochladen
+      - name: Create Release and Upload Asset
+        uses: softprops/action-gh-release@v2
+        with:
+          # Die erstellte .exe-Datei aus dem 'dist'-Ordner wird an das Release angehängt.
+          files: dist/pdf-annotation-extractor.exe

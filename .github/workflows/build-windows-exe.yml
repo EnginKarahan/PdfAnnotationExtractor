@@ -43,7 +43,7 @@ jobs:
             --name "pdf-annotation-extractor" `
             --icon "assets/icon.ico" `
             --add-data "src/pdf_annotation_extractor/locale;pdf_annotation_extractor/locale" `
-            --paths "src" ` # <-- HIER IST DIE WICHTIGE ÄNDERUNG
+            --paths "src"
             src/pdf_annotation_extractor/main.py
 
       # 6. Release auf GitHub erstellen und die .exe als Anhang hochladen

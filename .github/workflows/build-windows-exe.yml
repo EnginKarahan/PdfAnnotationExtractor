@@ -10,7 +10,7 @@ on:
 jobs:
   build-exe:
     runs-on: windows-latest
-
+    
     permissions:
       contents: write
 
@@ -33,7 +33,6 @@ jobs:
           pip install pyinstaller
 
       # 4. Die Übersetzungsdateien (.mo) kompilieren
-      # Der Pfad wurde an deine src-Struktur angepasst.
       - name: Compile translations
         run: python src/pdf_annotation_extractor/compile_translations.py
 
@@ -44,6 +43,7 @@ jobs:
             --name "pdf-annotation-extractor" `
             --icon "assets/icon.ico" `
             --add-data "src/pdf_annotation_extractor/locale;pdf_annotation_extractor/locale" `
+            --paths "src" ` # <-- HIER IST DIE WICHTIGE ÄNDERUNG
             src/pdf_annotation_extractor/main.py
 
       # 6. Release auf GitHub erstellen und die .exe als Anhang hochladen

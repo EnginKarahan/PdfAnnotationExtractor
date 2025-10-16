@@ -1,0 +1,64 @@
+app-id: net.karahan.PDFAnnotationExtractor
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+command: pdf-annotation-extractor.sh
+
+# HINZUGEFÜGT: Löst das "tkinter not found"-Problem auf die saubere Art.
+# Weist flatpak-builder an, die Tkinter-Erweiterung für Python aus dem SDK zu laden.
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.python3-tkinter
+
+# HINZUGEFÜGT: Stellt sicher, dass Python die installierten Pakete findet.
+build-options:
+  env:
+    - "PYTHONPATH=/app/lib/python3.11/site-packages"
+
+# Ihre Berechtigungen - diese sind gut und werden beibehalten.
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --socket=fallback-x11 # fallback-x11 ist oft redundant mit x11, schadet aber nicht.
+  - --socket=wayland
+  - --filesystem=home
+
+# Module, die gebaut und installiert werden
+modules:
+  # 1. Python-Abhängigkeiten
+  - name: python3-dependencies
+    buildsystem: simple
+    # KORRIGIERT: Dieser Befehl ist entscheidend! Er war bei Ihnen leer.
+    # Er nimmt die JSON-Datei und installiert die darin gelisteten Pakete mit pip.
+    # Ohne diesen Befehl werden Ihre Abhängigkeiten (PyMuPDF etc.) nicht installiert.
+    build-commands:
+      - pip3 install --verbose --exists-action=i --no-index --find-links="file://${PWD}" --prefix=${FLATPAK_DEST} --no-build-isolation -r /run/build/pdf-annotation-extractor/requirements.txt
+    sources:
+      - type: file
+        path: python3-dependencies.json
+      # Es ist gute Praxis, die requirements.txt auch hier anzugeben.
+      - type: file
+        path: requirements.txt
+
+  # 2. Ihre eigentliche Anwendung
+  - name: pdf-annotation-extractor
+    buildsystem: simple
+    build-commands:
+      # Diese Befehle sind korrekt.
+      - install -d /app/bin /app/lib/python3.11/site-packages/pdf_annotation_extractor
+      - install -d /app/share/applications /app/share/icons/hicolor/128x128/apps
+      - cp -r src/pdf_annotation_extractor/* /app/lib/python3.11/site-packages/pdf_annotation_extractor/
+      - install -Dm755 pdf-annotation-extractor.sh /app/bin/pdf-annotation-extractor.sh
+      - install -Dm644 net.karahan.PDFAnnotationExtractor.desktop /app/share/applications/net.karahan.PDFAnnotationExtractor.desktop
+      - install -Dm644 assets/net.karahan.PDFAnnotationExtractor.png /app/share/icons/hicolor/128x128/apps/net.karahan.PDFAnnotationExtractor.png
+    # KORRIGIERT: Statt das ganze Verzeichnis "." zu nehmen, werden nur die benötigten Dateien
+    # und Ordner angegeben. Das ist sauberer und verhindert, dass temporäre Build-Dateien
+    # oder Ihr virtuelles Environment mit in die Sandbox gelangen.
+    sources:
+      - type: dir
+        path: src
+      - type: file
+        path: pdf-annotation-extractor.sh
+      - type: file
+        path: net.karahan.PDFAnnotationExtractor.desktop
+      - type: file
+        path: assets/net.karahan.PDFAnnotationExtractor.png

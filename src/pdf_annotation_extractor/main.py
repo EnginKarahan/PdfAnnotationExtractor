@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 """
 
-from pdf_annotation_extractor.gui import PDFAnnotationExtractor
+from .gui import PDFAnnotationExtractor
 
 def main():
     app = PDFAnnotationExtractor()

@@ -11,7 +11,24 @@ except ImportError:
         return message
 
 
-LOCALE_DIR = os.path.join(os.path.dirname(__file__), "locale")
+SEARCH_PATHS = [
+    # 1. Relativ zum aktuellen Skript (für die lokale Entwicklung)
+    os.path.join(os.path.dirname(__file__), "locale"),
+    # 2. Systemweiter Pfad im Flatpak (/app/share/...)
+    # Wir verwenden die Umgebungsvariable, die Flatpak setzt.
+    os.path.join(os.environ.get('FLATPAK_APP_DIR', '/app'), 'share', 'pdf-annotation-extractor', 'locale')
+]
+
+LOCALE_DIR = ""
+for path in SEARCH_PATHS:
+    if os.path.isdir(path):
+        LOCALE_DIR = path
+        break
+
+if not LOCALE_DIR:
+    # Fallback mit einer Warnung, falls nichts gefunden wird
+    print("Warning: Locale directory not found. Falling back to default.")
+    LOCALE_DIR = os.path.join(os.path.dirname(__file__), "locale")
 
 LANGUAGES: Dict[str, str] = {
     "en": "English",

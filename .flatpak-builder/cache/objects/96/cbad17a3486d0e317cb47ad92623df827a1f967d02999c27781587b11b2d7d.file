@@ -1,0 +1,48 @@
+{
+  "id" : "net.karahan.PDFAnnotationExtractor",
+  "runtime" : "org.freedesktop.Platform",
+  "runtime-version" : "23.08",
+  "runtime-commit" : "065c61a337f78034498ad18e2707dacb6852823b150488b9f5c95e1548f70ab5",
+  "sdk" : "org.freedesktop.Sdk",
+  "sdk-commit" : "f7bd662b000ec1a857b81d8fc158295493cc79b7286bae2c99ee357ab7ef17db",
+  "command" : "pdf-annotation-extractor.sh",
+  "modules" : [
+    {
+      "name" : "python3-dependencies",
+      "buildsystem" : "simple",
+      "sources" : [
+        {
+          "path" : "python3-dependencies.json",
+          "type" : "file"
+        }
+      ],
+      "build-commands" : []
+    },
+    {
+      "name" : "pdf-annotation-extractor",
+      "buildsystem" : "simple",
+      "sources" : [
+        {
+          "path" : ".",
+          "type" : "dir"
+        }
+      ],
+      "build-commands" : [
+        "install -d /app/bin /app/lib/python3.11/site-packages/pdf_annotation_extractor",
+        "install -d /app/share/applications /app/share/icons/hicolor/128x128/apps",
+        "cp -r src/pdf_annotation_extractor/* /app/lib/python3.11/site-packages/pdf_annotation_extractor/",
+        "install -Dm755 pdf-annotation-extractor.sh /app/bin/pdf-annotation-extractor.sh",
+        "install -Dm644 net.karahan.PDFAnnotationExtractor.desktop /app/share/applications/net.karahan.PDFAnnotationExtractor.desktop",
+        "install -Dm644 assets/net.karahan.PDFAnnotationExtractor.png /app/share/icons/hicolor/128x128/apps/net.karahan.PDFAnnotationExtractor.png"
+      ]
+    }
+  ],
+  "finish-args" : [
+    "--share=ipc",
+    "--socket=x11",
+    "--socket=fallback-x11",
+    "--socket=wayland",
+    "--filesystem=home"
+  ],
+  "source-date-epoch" : 1760567573
+}

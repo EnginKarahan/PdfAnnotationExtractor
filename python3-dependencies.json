@@ -1,0 +1,22 @@
+{
+    "name": "python3-Babel",
+    "buildsystem": "simple",
+    "build-commands": [
+        "pip3 install --verbose --exists-action=i --no-index --find-links=\"file://${PWD}\" --prefix=${FLATPAK_DEST} \"Babel==2.13.1\" --no-build-isolation"
+    ],
+    "sources": [
+        {
+            "type": "file",
+            "url": "https://files.pythonhosted.org/packages/86/14/5dc2eb02b7cc87b2f95930310a2cc5229198414919a116b564832c747bc1/Babel-2.13.1-py3-none-any.whl",
+            "sha256": "7077a4984b02b6727ac10f1f7294484f737443d7e2e66c5e4380e41a3ae0b4ed"
+        },
+        {
+        "type": "file",
+        "url": "https://files.pythonhosted.org/packages/04/48/e6784100583f7157a994755866100c5940dc1b96f7c19f56360773d740e0/PyMuPDF-1.23.8-cp311-cp311-manylinux2014_x86_64.whl",
+        "sha256": "24e3a8915152733d32890696328a9f6580f49c0953c5f42657e4e04f69741e4d",
+        "only-arches": [
+            "x86_64"
+           ]
+        }
+    ]
+}

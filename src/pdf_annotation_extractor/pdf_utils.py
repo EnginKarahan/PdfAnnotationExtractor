@@ -14,7 +14,7 @@ import fitz
 from typing import Callable, Optional, List
 from datetime import datetime
 import re
-from translations import _
+from .translations import _
 
 
 class PDFProcessingError(Exception):

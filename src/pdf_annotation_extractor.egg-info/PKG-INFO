@@ -1,37 +1,21 @@
 Metadata-Version: 2.4
 Name: pdf-annotation-extractor
-Version: 0.0.2a0
-Summary: A tool for extracting annotations from PDF files
+Version: 0.0.3a0
+Summary: A tool for extracting and processing PDF annotations.
 Home-page: https://github.com/EnginKarahan/PdfAnnotationExtractor
 Author: Engin Karahan
-Author-email: engin.karahan@gmail.com
+Author-email: Engin Karahan <engin.karahan@gmail.com>
 License: GPL-3.0-or-later
-Classifier: Development Status :: 3 - Alpha
-Classifier: Intended Audience :: End Users/Desktop
-Classifier: Topic :: Text Processing :: Markup
-Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
 Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3.6
-Classifier: Programming Language :: Python :: 3.7
-Classifier: Programming Language :: Python :: 3.8
-Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
 Classifier: Operating System :: OS Independent
 Requires-Python: >=3.6
 Description-Content-Type: text/markdown
 License-File: LICENSE
-Requires-Dist: PyMuPDF==1.23.8
-Requires-Dist: gettext-windows>=0.21; sys_platform == "win32"
-Requires-Dist: babel~=2.16.0
 Dynamic: author
-Dynamic: author-email
-Dynamic: classifier
-Dynamic: description
-Dynamic: description-content-type
 Dynamic: home-page
 Dynamic: license-file
-Dynamic: requires-dist
 Dynamic: requires-python
-Dynamic: summary
 
 # PDF Annotation Extractor
 

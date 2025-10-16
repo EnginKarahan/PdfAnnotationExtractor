@@ -22,8 +22,8 @@ import os
 import tkinter as tk
 from tkinter import filedialog, ttk, messagebox
 
-import pdf_annotation_extractor.translations as translations
-from pdf_annotation_extractor.pdf_utils import extract_pdf_annotations, PDFProcessingError
+from . import translations
+from .pdf_utils import extract_pdf_annotations, PDFProcessingError
 
 translation_manager = translations.translation_manager
 _ = translations._

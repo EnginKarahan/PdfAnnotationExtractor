@@ -1,0 +1,19 @@
+[Application]
+name=com.enginkarahan.PdfAnnotationExtractor
+runtime=org.freedesktop.Platform/x86_64/24.08
+sdk=org.freedesktop.Sdk/x86_64/24.08
+command=pdf-annotation-extractor
+
+[Context]
+shared=ipc;
+sockets=x11;wayland;
+devices=dri;
+filesystems=home;
+
+[Extension com.enginkarahan.PdfAnnotationExtractor.Debug]
+directory=lib/debug
+autodelete=true
+no-autodownload=true
+
+[Build]
+built-extensions=com.enginkarahan.PdfAnnotationExtractor.Debug;

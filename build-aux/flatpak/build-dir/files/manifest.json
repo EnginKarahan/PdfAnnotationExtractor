@@ -1,0 +1,56 @@
+{
+  "id" : "com.enginkarahan.PdfAnnotationExtractor",
+  "runtime" : "org.freedesktop.Platform",
+  "runtime-version" : "24.08",
+  "runtime-commit" : "8c6cba630eb51fb2af2dcb6b00ecc49954724fa7c1149ed3d4c4e5318ba347a5",
+  "sdk" : "org.freedesktop.Sdk",
+  "sdk-commit" : "c54595c96eb068fc18e05e8b3d1cda7e0e2b19cd9ad818af6ed6431c9c0a3a60",
+  "command" : "pdf-annotation-extractor",
+  "modules" : [
+    {
+      "name" : "python-deps",
+      "buildsystem" : "simple",
+      "sources" : [
+        {
+          "path" : "../../requirements.txt",
+          "type" : "file"
+        }
+      ],
+      "build-options" : {
+        "build-args" : [
+          "--share=network"
+        ]
+      },
+      "build-commands" : [
+        "pip3 install --no-cache-dir --no-deps --prefix=${FLATPAK_DEST} -r requirements.txt"
+      ]
+    },
+    {
+      "name" : "pdf-annotation-extractor",
+      "buildsystem" : "simple",
+      "sources" : [
+        {
+          "path" : "../../",
+          "skip" : [
+            ".git",
+            ".venv",
+            "dist",
+            "build-aux/flatpak"
+          ],
+          "type" : "dir"
+        }
+      ],
+      "build-commands" : [
+        "pip3 install --no-cache-dir --no-deps --prefix=${FLATPAK_DEST} ."
+      ]
+    }
+  ],
+  "finish-args" : [
+    "--share=ipc",
+    "--socket=x11",
+    "--socket=wayland",
+    "--device=dri",
+    "--filesystem=home"
+  ],
+  "source-date-epoch" : 1759367424
+}

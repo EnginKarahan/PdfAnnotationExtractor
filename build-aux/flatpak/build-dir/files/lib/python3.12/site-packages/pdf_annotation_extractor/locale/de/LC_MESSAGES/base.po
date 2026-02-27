@@ -1,0 +1,141 @@
+# German translations for PDF Annotation Extractor
+# Copyright (C) 2024 [Your Name]
+# This file is distributed under the same license as the PDF Annotation Extractor package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PDF Annotation Extractor 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-12 12:00+0100\n"
+"PO-Revision-Date: 2024-02-12 12:00+0100\n"
+"Last-Translator: [Your Name] <your.email@example.com>\n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "Text Note"
+msgstr "Textnotiz"
+
+msgid "Highlight"
+msgstr "Hervorhebung"
+
+msgid "Underline"
+msgstr "Unterstreichung"
+
+msgid "Strike Out"
+msgstr "Durchgestrichen"
+
+msgid "Square"
+msgstr "Rechteck"
+
+msgid "Circle"
+msgstr "Kreis"
+
+msgid "Free Text"
+msgstr "Freitext"
+
+msgid "The PDF file does not exist: {0}"
+msgstr "Die PDF-Datei existiert nicht: {0}"
+
+msgid "Could not open PDF file: {0}"
+msgstr "PDF-Datei konnte nicht geöffnet werden: {0}"
+
+msgid "No PDF document loaded"
+msgstr "Kein PDF-Dokument geladen"
+
+msgid "Error detecting page offset: {0}"
+msgstr "Fehler beim Erkennen des Seitenoffsets: {0}"
+
+msgid "Detecting page offset..."
+msgstr "Erkenne Seitenoffset..."
+
+msgid "Processing page {0} of {1}..."
+msgstr "Verarbeite Seite {0} von {1}..."
+
+msgid "Warning: Could not process annotation on page {0}: {1}"
+msgstr "Warnung: Konnte Annotation auf Seite {0} nicht verarbeiten: {1}"
+
+msgid "Annotations extracted from: {0}"
+msgstr "Extrahierte Annotationen aus: {0}"
+
+msgid "Extraction date: {0}"
+msgstr "Extraktionsdatum: {0}"
+
+msgid "Page {0}:"
+msgstr "Seite {0}:"
+
+msgid "Created"
+msgstr "Erstellt"
+
+msgid "Modified"
+msgstr "Geändert"
+
+msgid "PDF files"
+msgstr "PDF-Dateien"
+
+msgid "All files"
+msgstr "Alle Dateien"
+
+msgid "Extract Annotations"
+msgstr "Annotationen extrahieren"
+
+msgid "Select PDF File"
+msgstr "PDF-Datei auswählen"
+
+msgid "Browse"
+msgstr "Durchsuchen"
+
+msgid "Page Numbering"
+msgstr "Seitennummerierung"
+
+msgid "Page offset:"
+msgstr "Seitenoffset:"
+
+msgid "(-1 for automatic detection)"
+msgstr "(-1 für automatische Erkennung)"
+
+msgid "Error"
+msgstr "Fehler"
+
+msgid "The selected file does not exist."
+msgstr "Die ausgewählte Datei existiert nicht."
+
+msgid "Done! Output saved to: "
+msgstr "Fertig! Ausgabe gespeichert in: "
+
+msgid "Success"
+msgstr "Erfolg"
+
+msgid "Annotations were successfully extracted.\n\nOutput file: {0}"
+msgstr "Annotationen wurden erfolgreich extrahiert.\n\nAusgabedatei: {0}"
+
+msgid "Error during processing"
+msgstr "Fehler bei der Verarbeitung"
+
+# Menu items
+msgid "File"
+msgstr "Datei"
+
+msgid "Language"
+msgstr "Sprache"
+
+msgid "Help"
+msgstr "Hilfe"
+
+msgid "Exit"
+msgstr "Beenden"
+
+msgid "About"
+msgstr "Über"
+
+msgid "About PDF Annotation Extractor"
+msgstr "Über PDF Annotation Extractor"
+
+msgid "Status: Ready"
+msgstr "Status: Bereit"
+
+msgid "Status: Processing..."
+msgstr "Status: Verarbeitung..."

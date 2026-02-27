@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=61.0", "PyQt6"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pdf-annotation-extractor"
+version = "1.0.0"
+description = "A tool for extracting and processing PDF annotations with KDE Plasma integration."
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "GPL-3.0-or-later"}
+authors = [
+  { name="Engin Karahan", email="engin.karahan@gmail.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Operating System :: OS Independent",
+    "Topic :: Text Processing :: Markup",
+    "Intended Audience :: End Users/Desktop",
+    "Development Status :: 4 - Beta",
+]
+dependencies = [
+    "PyMuPDF>=1.23.0",
+    "PyQt6>=6.6.0",
+    "PyQt6-WebEngine>=6.5.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-qt>=4.2.0",
+    "pytest-cov>=4.1.0",
+    "behave>=1.2.6",
+    "PyInstaller>=6.0.0",
+]
+
+[project.scripts]
+pdf-annotation-extractor = "pdf_annotation_extractor.gui:main"
+pdf-extract = "pdf_annotation_extractor.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = "test_*.py"
+python_classes = "Test*"
+python_functions = "test_*"
+addopts = "-v --tb=short"
+
+[tool.coverage.run]
+source = ["src/pdf_annotation_extractor"]
+omit = ["*/tests/*", "*/test_*.py"]

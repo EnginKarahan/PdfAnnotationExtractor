@@ -1,0 +1,35 @@
+app-id: com.enginkarahan.PdfAnnotationExtractor
+runtime: org.freedesktop.Platform
+runtime-version: '24.08'
+sdk: org.freedesktop.Sdk
+command: pdf-annotation-extractor
+finish-args:
+  - --share=ipc
+  - --socket=x11
+  - --socket=wayland
+  - --device=dri
+  - --filesystem=home
+modules:
+  - name: python-deps
+    buildsystem: simple
+    build-options:
+      build-args:
+        - --share=network
+    build-commands:
+      - pip3 install --no-cache-dir --no-deps --prefix=${FLATPAK_DEST} -r requirements.txt
+    sources:
+      - type: file
+        path: ../../requirements.txt
+
+  - name: pdf-annotation-extractor
+    buildsystem: simple
+    build-commands:
+      - pip3 install --no-cache-dir --no-deps --prefix=${FLATPAK_DEST} .
+    sources:
+      - type: dir
+        path: ../../
+        skip:
+          - '.git'
+          - '.venv'
+          - 'dist'
+          - 'build-aux/flatpak'

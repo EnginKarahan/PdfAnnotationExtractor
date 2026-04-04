@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>net.karahan.PDFAnnotationExtractor</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>PDF Annotation Extractor</name>
+  <name xml:lang="de">PDF Kommentar-Extraktor</name>
+  <summary>Extract annotations from PDF files</summary>
+  <summary xml:lang="de">Anmerkungen aus PDF-Dateien extrahieren</summary>
+  <description>
+    <p>
+      PDF Annotation Extractor is a tool for extracting and processing annotations
+      from PDF files. It provides a user-friendly interface to browse PDF files,
+      view them with highlighted annotations, and export the extracted comments.
+    </p>
+    <p xml:lang="de">
+      PDF Kommentar-Extraktor ist ein Werkzeug zum Extrahieren und Verarbeiten
+      von Anmerkungen aus PDF-Dateien. Es bietet eine benutzerfreundliche Oberfläche
+      zum Durchsuchen von PDF-Dateien, zur Ansicht mit hervorgehobenen Anmerkungen
+      und zum Exportieren der extrahierten Kommentare.
+    </p>
+    <p>Features:</p>
+    <ul>
+      <li>Browse directories for PDF files</li>
+      <li>Preview PDFs with annotation highlighting</li>
+      <li>Extract and export annotations</li>
+      <li>KDE Plasma integration</li>
+      <li>Multi-language support (English, German, Turkish)</li>
+    </ul>
+  </description>
+  <launchable type="desktop-id">net.karahan.PDFAnnotationExtractor.desktop</launchable>
+  <url type="homepage">https://github.com/EnginKarahan/PdfAnnotationExtractor</url>
+  <url type="bugtracker">https://github.com/EnginKarahan/PdfAnnotationExtractor/issues</url>
+  <developer_name>Engin Karahan</developer_name>
+  <content_rating type="oars-1.1"/>
+  <releases>
+    <release version="1.0.0" date="2026-03-09">
+      <description>
+        <p>Initial release with PyQt6 rewrite</p>
+        <ul>
+          <li>Complete GUI rewrite with PyQt6</li>
+          <li>3-panel layout (Files, Functions, Preview)</li>
+          <li>PDF preview with annotation highlighting</li>
+          <li>KDE Plasma integration</li>
+          <li>Multi-language support</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  <screenshots>
+    <!-- Screenshots can be added later when app is running -->
+  </screenshots>
+  <categories>
+    <category>Utility</category>
+    <category>Office</category>
+  </categories>
+  <keywords>
+    <keyword>PDF</keyword>
+    <keyword>annotation</keyword>
+    <keyword>extractor</keyword>
+    <keyword>comment</keyword>
+    <keyword>KDE</keyword>
+  </keywords>
+  <supports>
+    <control>pointing</control>
+    <control>keyboard</control>
+  </supports>
+  <requires>
+    <display_length compare="ge">768</display_length>
+  </requires>
+</component>

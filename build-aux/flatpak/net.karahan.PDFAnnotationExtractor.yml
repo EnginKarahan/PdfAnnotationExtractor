@@ -1,16 +1,12 @@
 app-id: net.karahan.PDFAnnotationExtractor
 runtime: org.kde.Platform
-runtime-version: '6.6'
+runtime-version: '6.10'
 sdk: org.kde.Sdk
-sdk-extensions:
-  - org.freedesktop.Sdk.Extension.python3.11
-  - org.freedesktop.Sdk.Extension.python3-tkinter
 
 command: pdf-annotation-extractor
 
 finish-args:
   - --share=ipc
-  - --socket=x11
   - --socket=wayland
   - --socket=fallback-x11
   - --filesystem=home
@@ -18,40 +14,19 @@ finish-args:
   - --env=QT_QPA_PLATFORM=wayland
 
 build-options:
-  append-path: /usr/lib/python3.11/bin
+  append-path: /usr/lib/sdk/python3.11/bin:/usr/lib/sdk/python3/bin
   env:
     PYTHONPATH: /app/lib/python3.11/site-packages
 
 modules:
-  - name: python3-pymupdf
-    buildsystem: simple
-    build-commands:
-      - pip3 install PyMuPDF
-    sources:
-      - type: python-index
-        url: https://pypi.org/simple
-
-  - name: python3-pyqt6
-    buildsystem: simple
-    build-commands:
-      - pip3 install PyQt6
-    sources:
-      - type: python-index
-        url: https://pypi.org/simple
-
   - name: pdf-annotation-extractor
     buildsystem: simple
     build-commands:
-      - pip3 install --verbose --no-build-isolation -r requirements.txt
-      - install -Dm755 src/pdf_annotation_extractor/gui/__init__.py /app/bin/pdf-annotation-extractor
+      - pip3 install PyMuPDF PyQt6 PyQt6-WebEngine
+      - pip3 install --no-build-isolation -e .
       - install -Dm644 net.karahan.PDFAnnotationExtractor.desktop /app/share/applications/net.karahan.PDFAnnotationExtractor.desktop
+      - install -Dm644 net.karahan.PDFAnnotationExtractor.metainfo.xml /app/share/metainfo/net.karahan.PDFAnnotationExtractor.metainfo.xml
       - install -Dm644 assets/net.karahan.PDFAnnotationExtractor.png /app/share/icons/hicolor/128x128/apps/net.karahan.PDFAnnotationExtractor.png
     sources:
       - type: dir
         path: .
-      - type: file
-        path: requirements.txt
-      - type: file
-        path: net.karahan.PDFAnnotationExtractor.desktop
-      - type: file
-        path: assets/net.karahan.PDFAnnotationExtractor.png

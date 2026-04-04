@@ -1,10 +1,13 @@
 [Desktop Entry]
-Version=0.0.3
+Version=1.0.0
 Name=PDF Annotation Extractor
+Name[de]=PDF Kommentar-Extraktor
 Comment=Extract annotations from PDF files
-# Wichtig: Der Exec-Befehl ist nur der Name der App, Flatpak kümmert sich um den Rest.
-Exec=pdf-annotation-extractor.sh
+Comment[de]=Anmerkungen aus PDF-Dateien extrahieren
+Exec=pdf-annotation-extractor
 Icon=net.karahan.PDFAnnotationExtractor
 Terminal=false
 Type=Application
-Categories=Utility;
+Categories=Utility;Office;
+Keywords=PDF;annotation;extractor;comment;KDE;
+StartupNotify=true

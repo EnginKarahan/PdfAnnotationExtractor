@@ -10,6 +10,7 @@ from pathlib import Path
 from typing import Optional
 
 from ..core import extract_pdf_annotations, validate_pdf, PDFProcessingError
+from ..logger import set_debug
 
 
 def create_parser() -> argparse.ArgumentParser:
@@ -48,9 +49,9 @@ For more information, visit: https://github.com/EnginKarahan/PdfAnnotationExtrac
         help="Page offset for internal page numbering (-1 for automatic detection, default: -1)",
     )
 
-    parser.add_argument(
-        "-v", "--verbose", action="store_true", help="Enable verbose output"
-    )
+    parser.add_argument("-v", "--verbose", action="store_true", help="Enable verbose output")
+
+    parser.add_argument("-d", "--debug", action="store_true", help="Enable debug output")
 
     parser.add_argument("--version", action="version", version="%(prog)s 1.0.0")
 
@@ -66,6 +67,9 @@ def main(argv: Optional[list] = None) -> int:
     """Main entry point for CLI"""
     parser = create_parser()
     args = parser.parse_args(argv)
+
+    if args.debug:
+        set_debug(True)
 
     input_path = Path(args.input)
 
@@ -95,7 +99,7 @@ def main(argv: Optional[list] = None) -> int:
         return 1
     except Exception as e:
         print(f"Unexpected error: {e}", file=sys.stderr)
-        if args.verbose:
+        if args.verbose or args.debug:
             import traceback
 
             traceback.print_exc()
